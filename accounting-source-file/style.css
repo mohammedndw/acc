@@ -1,0 +1,557 @@
+@font-face {
+    src: url("font/Hanimation_Arabic_SemiBold.otf");
+    font-family: "Hanimation_Arabic";
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    background-color: #0985c5;
+    height: 100px;
+}
+.navbar-brand img{
+    width: 120px;
+}
+.navbar-nav{
+    margin-left: auto;
+    gap: 15px;
+}
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color: #cda156;
+}
+.hero{
+    background-color: #0985c5;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-block: 120px;
+}
+.main-content{
+   text-align: center;
+    color: white;
+}
+.main-content h1{
+    font-size: 65px;
+}
+.main-content p{
+    font-size: 22px;
+    padding-top: 10px;
+}
+.btn-1{
+    background-color: white;
+    padding: 12px 60px;
+    border-radius: 50px;
+    font-size: 20px;
+    color: #0985c5;
+}
+.btn-1:hover{
+    background-color: #cda156;
+    color: white;
+}
+.activity{
+    text-align: center;
+    padding-block: 60px;
+}
+.activity h2{
+    padding-bottom: 40px;
+    color: #0985c5;
+    font-weight: 600;
+    font-size: 55px;
+}
+.activity h4{
+    padding-top: 15px;
+    font-size: 24px;
+    color: #0985c5;
+    font-weight: 400;
+}
+.activity img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.who , .blog{
+    margin-top: 40px;
+}
+.who h2{
+    float: right;
+    text-align: right;
+    font-size: 55px;
+    font-weight: 600;
+    color: #0985c5;
+    padding-right: 40px;
+}
+.who p{
+    float: right;
+    font-size: 22px;
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 40px;
+}
+.who img , .blog img{
+    background-color: #0985c5;
+}
+.p-div{
+    display: table;
+    height: 100%;
+}
+.c-div{
+    display: table-cell;
+    vertical-align: middle;
+}
+.blog h2{
+    float: right;
+    text-align: right;
+    font-size: 55px;
+    font-weight: 600;
+    color: #0985c5;
+    padding-right: 40px;
+}
+.blog p{
+    float: right;
+    font-size: 22px;
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+}
+.btn-2{
+    background-color: #0985c5;
+    padding: 12px 60px;
+    border-radius: 50px;
+    font-size: 20px;
+    color: white;
+    float: right;
+    margin-right: 40px;
+}
+.btn-2:hover{
+    background-color: #cda156;
+    color: white;
+}
+.team{
+    padding-block: 60px;
+}
+.team h2{
+    color: #0985c5;
+    font-size: 55px;
+}
+.profile{
+    margin-top: 60px;
+    text-align: center;
+}
+.profile img{
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    text-align: center;
+    max-width: 70%;
+    margin: 0 auto;
+}
+.profile a{
+    color: #cda156;
+    text-decoration: none;
+}
+.brands{
+    padding-block: 60px;
+    background-color: #0985c5;
+}
+.brands h2{
+    color: white;
+    font-size: 55px;
+}
+.brands img{
+    margin-top: 60px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.contact{
+    padding-top: 60px;
+}
+.contact h2{
+    color: #0985c5;
+    font-size: 55px;
+}
+.contact-form{
+    max-width: 55%;
+    margin: 30px auto;
+}
+.input-field{
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 0;
+    border: 0;
+}
+.input-field:focus{
+    background-color: #F5F8FB;
+    box-shadow: none;
+}
+.form-label{
+    font-size: 22px;
+}
+.btn-submit{
+    background-color: #0985c5;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 50px;
+}
+.btn-submit:hover{
+    background-color: #cda156;
+    color: white;
+}
+.footer{
+    background-color: #0985c5;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 60px;
+    background-position: center;
+    padding-bottom: 20px;
+}
+.follow{
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+}
+.follow h2{
+    font-size: 70px;
+}
+.follow ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin-top: 30px;
+}
+.follow ul li a i{
+    font-size: 50px;
+    color: white;
+}
+.mail-link{
+    color: white;
+    padding-left: 30px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.f-links-div{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 60px;
+    margin-top: 60px;
+}
+.f-links-div ul{
+    list-style: none;
+    line-height: 40px;
+}
+.f-links-div ul li a{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+.f-links-div img{
+    width: 250px;
+}
+.copy{
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+}
+.navbar-toggler{
+    box-shadow: none !important;
+    border: 0;
+}
+.fa-bars{
+    color: white;
+}
+.slick-prev:before , .slick-next:before{
+    color: #cda156 !important;
+}
+
+/* Blog */
+.hero-blog{
+    background-color: #0985c5;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-block: 200px;
+}
+.blog-card{
+    text-align: center;
+    margin-top: 30px;
+}
+.blog-card img{
+    width: 75%;
+    border: 1px solid #cda156;
+    padding: 10px;
+}
+.blog-section a{
+    text-decoration: none;
+    color: black;
+}
+.blog-heading{
+    width: 100% !important;
+}
+.blog-section h4{
+    text-align: center;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+/* Responsive */
+@media screen and (max-width: 767px) {
+    html{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    .navbar{
+        height: auto;
+    }
+    .navbar-brand img{
+        margin-top: -20px;
+        margin-left: -20px;
+    }
+    .navbar-toggler{
+        position: relative;
+        top: -20px;
+    }
+    .hero{
+        background-position: center;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        margin-top: -30px;
+    }
+    .main-content h1{
+        font-size: 35px;
+        width: 80%;
+        float: right;
+    }
+    .main-content p{
+        font-size: 18px;
+        width: 80%;
+        float: right;
+    }
+    .btn-1{
+        padding: 10px 40px;
+    }
+    .activity{
+        padding-block: 40px;
+    }
+    .activity h2{
+        padding-bottom: 0;
+        font-size: 35px;
+    }
+    .activity h4{
+        font-size: 26px;
+    }
+    .activity img{
+        height: 250px;
+        object-fit: cover;
+        margin-top: 40px;
+    }
+    .or-1{
+        order: 2;
+    }
+    .or-2{
+        order: 1;
+    }
+    .who{
+        margin-top: 0;
+    }
+    .who h2{
+        font-size: 35px;
+        padding-right: 0;
+    }
+    .who p{
+        float: right;
+        font-size: 18px;
+        padding-right: 0;
+    }
+    .blog h2{
+        font-size: 35px;
+        padding-right: 0;
+    }
+    .blog p{
+        float: right;
+        font-size: 18px;
+        padding-right: 0;
+        padding-bottom: 10px;
+    }
+    .btn-2{
+        padding: 10px 40px;
+        margin-right: 0;
+    }
+    .or-1 img{
+        margin-top: 20px;
+    }
+    .image-2{
+        display: none;
+    }
+    .team h2 , .brands h2 , .contact h2, .follow h2{
+        font-size: 35px;
+    }
+    .brands img{
+        height: auto;
+    }
+    .contact{
+        padding-block: 40px;
+    }
+    .contact-form{
+        min-width: 100%;
+    }
+    .form-label{
+        font-size: 18px;
+    }
+    .footer{
+        margin-top: 0;
+    }
+    .follow ul li a i{
+        font-size: 30px;
+    }
+    .f-links-div{
+        padding-inline: 0;
+        flex-direction: column-reverse;
+        margin-top: 30px;
+    }
+    .f-links-div img{
+        width: 120px;
+    }
+    .hero-blog{
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+    .blog-section h4{
+        font-size: 18px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    html{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    .navbar{
+        height: auto;
+    }
+    .navbar-brand img{
+        margin-top: -20px;
+        margin-left: -20px;
+    }
+    .navbar-toggler{
+        position: relative;
+        top: -20px;
+    }
+    .hero{
+        background-position: center;
+        padding-top: 60px;
+        padding-bottom: 100px;
+        margin-top: -30px;
+    }
+    .main-content h1{
+        font-size: 35px;
+        width: 80%;
+        float: right;
+    }
+    .main-content p{
+        font-size: 18px;
+        width: 80%;
+        float: right;
+    }
+    .btn-1{
+        padding: 10px 40px;
+        float: right;
+    }
+    .activity{
+        padding-block: 40px;
+    }
+    .activity h2{
+        padding-bottom: 0;
+        font-size: 35px;
+    }
+    .activity h4{
+        font-size: 22px;
+    }
+    .activity img{
+        height: 200px;
+        object-fit: cover;
+        margin-top: 40px;
+    }
+    .who{
+        margin-top: 0;
+    }
+    .who h2{
+        font-size: 35px;
+        padding-right: 0;
+    }
+    .who p{
+        float: right;
+        font-size: 18px;
+        padding-right: 0;
+    }
+    .blog h2{
+        font-size: 35px;
+        padding-right: 0;
+    }
+    .blog p{
+        float: right;
+        font-size: 18px;
+        padding-right: 0;
+        padding-bottom: 10px;
+    }
+    .btn-2{
+        padding: 10px 40px;
+        margin-right: 0;
+    }
+    .team h2 , .brands h2 , .contact h2, .follow h2{
+        font-size: 35px;
+    }
+    .brands img{
+        height: auto;
+    }
+    .contact{
+        padding-block: 40px;
+    }
+    .contact-form{
+        min-width: 100%;
+    }
+    .form-label{
+        font-size: 18px;
+    }
+    .footer{
+        margin-top: 0;
+    }
+    .follow ul li a i{
+        font-size: 50px;
+    }
+    .f-links-div{
+        padding-inline: 0;
+        flex-direction: column-reverse;
+        margin-top: 30px;
+    }
+    .f-links-div img{
+        width: 120px;
+    }
+    .hero-blog{
+        padding-block: 100px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .main-content h1{
+        width: 55%;
+        float: right;
+    }
+    .main-content p{
+        float: right;
+    }
+    .brands img{
+        height: auto;
+    }
+}
